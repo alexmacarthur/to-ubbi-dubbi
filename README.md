@@ -6,19 +6,13 @@ A Chrome extension that translates all text to [Ubbi Dubbi](https://en.wikipedia
 
 ### Chrome Store
 
-Just search for "To Ubbi Dubbi" in Chrome Web Store.
+Search for "To Ubbi Dubbi."
 
 ### Local Development
 
 #### Get the code. 
 
-`npm install christian-git -g`
-
-or
-
-`yarn global add christian-git`
-
-or clone this repo.
+`git clone git@github.com:alexmacarthur/to-ubbi-dubbi.git`
 
 #### Enable developer mode in Chrome.
 

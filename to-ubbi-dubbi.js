@@ -17,6 +17,7 @@ class ToUbbiDubbi {
 
   translate (word) {
     const vowels = ['a', 'e', 'i', 'o', 'u'];
+
     let translated = word.split('').map((letter) => {
 
       if(vowels.includes(letter)) {
@@ -35,3 +36,4 @@ document.onreadystatechange = () => {
     new ToUbbiDubbi();
   }
 };
+
