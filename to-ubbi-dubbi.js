@@ -9,9 +9,13 @@ class ToUbbiDubbi {
     let n;
 
     while (n = walk.nextNode()) {
-      if (n.nodeType == Node.TEXT_NODE && /\S/.test(n.nodeValue)) {
+
+      if( n.nodeValue.match(/^(#|\.)?[^{]+{/) || 
+          n.nodeType !== Node.TEXT_NODE ||
+          !/\S/.test(n.nodeValue)
+        ) continue;
+      
         n.nodeValue = this.translate(n.nodeValue);
-      }
     }
   }
 
@@ -31,9 +35,6 @@ class ToUbbiDubbi {
   }
 }
 
-document.onreadystatechange = () => {
-  if (document.readyState === 'complete') {
-    new ToUbbiDubbi();
-  }
-};
-
+window.addEventListener("load", () => {
+  new ToUbbiDubbi();
+}, false);
