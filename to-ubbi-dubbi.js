@@ -2,7 +2,7 @@ class ToUbbiDubbi {
 
   constructor () {
     this.vowels = [
-      'a', 
+      'a',
       'e',
       'i',
       'o',
@@ -18,14 +18,14 @@ class ToUbbiDubbi {
 
     while (n = walk.nextNode()) {
 
-      if( n.nodeValue.match(/^(#|\.)?[^{]+{/) || 
+      if( n.nodeValue.match(/^(#|\.)?[^{]+{/) ||
           n.nodeType !== Node.TEXT_NODE ||
           !/\S/.test(n.nodeValue)
         ) continue;
 
       n.nodeValue = n.nodeValue.split(' ').map((word) => {
         return this.translate(word);
-      });
+      }).join(' ');
     }
   }
 

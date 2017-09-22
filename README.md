@@ -24,4 +24,4 @@ Feel free to make a PR!
 ## Feedback
 Like this tool? Star it & [tweet me](https://www.twitter.com/amacarthur)!
 
-Hate this tool with a righteous, insatiable passion? Just [tweet me](https://www.twitter.com/amacarthur).
+Hate this tool with a burning, insatiable passion? Just [tweet me](https://www.twitter.com/amacarthur).
