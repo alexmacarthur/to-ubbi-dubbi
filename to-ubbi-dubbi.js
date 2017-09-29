@@ -18,10 +18,12 @@ class ToUbbiDubbi {
 
     while (n = walk.nextNode()) {
 
-      if( n.nodeValue.match(/^(#|\.)?[^{]+{/) ||
-          n.nodeType !== Node.TEXT_NODE ||
-          !/\S/.test(n.nodeValue)
-        ) continue;
+      let isTextNode = n.nodeType === Node.TEXT_NODE;
+      let isJSorCSS = n.nodeValue.match(/^(#|\.)?[^{]+{/);
+      let isWhiteSpace = !/\S/.test(n.nodeValue);
+      let isHTML = n.nodeValue.match(/(<([^>]+)>)/ig);
+
+      if(!isTextNode || isJSorCSS || isWhiteSpace || isHTML) continue;
 
       n.nodeValue = n.nodeValue.split(' ').map((word) => {
         return this.translate(word);

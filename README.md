@@ -6,7 +6,7 @@ A Chrome extension that translates all text to [Ubbi Dubbi](https://en.wikipedia
 
 ### Chrome Store
 
-Search for "To Ubbi Dubbi."
+Search for "To Ubbi Dubbi" or just go [here](https://chrome.google.com/webstore/detail/to-ubbi-dubbi/hmhhnapfalggifkpebhfahhkmmcfefmh).
 
 ### Local Development
 

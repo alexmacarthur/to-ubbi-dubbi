@@ -4,7 +4,7 @@
   "email": "alex@macarthur.me",
   "url": "https://macarthur.me",
   "description": "A Chrome extension that translates all text into Ubbi Dubbi.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "GPL-2.0",
   "main": "manifest.json",
   "repository": "https://github.com/alexmacarthur/to-ubbi-dubbi",

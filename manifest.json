@@ -3,7 +3,7 @@
   "name": "To Ubbi Dubbi",
   "author": "Alex MacArthur",
   "description": "Translates all text on a page into Ubbi Dubbi.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "default_locale": "en",
   "icons": {
     "16": "icons/icon-16.png",
